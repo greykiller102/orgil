@@ -1,0 +1,94 @@
+.menu{
+    width:100%;
+    height:auto;
+    border-bottom: 1px solid #ccc;
+    .undsen{
+        width:80%;
+        height:100%;
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        .haih{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap:10px;
+            .logo{
+                img{
+                    width:119px;
+                    height:39px;
+                }
+            }
+            .menubar{
+                #check{
+                    display: none;
+                }
+                i{
+                    font-size: 22px;
+                    padding:7.5px 9px;
+                    border:1px solid #ccc;
+                    color:#ccc;
+                }
+            }
+            .s{
+                width:556px;
+                height:40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:10px;
+                padding-left:20px;
+                .hehe{
+                    width:500px;
+                    height:40px;
+                }
+                .searchicon{
+                    i{
+                        background-color: #1e87f0;
+                        color: #fff;
+                        border: 1px solid rgba(0,0,0,0);
+                        padding:11px 12px;
+                    }
+                }
+            }
+        }
+        .hansh{
+            width:244px;
+            height:64px;
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                list-style: none;
+                gap:10px;
+                li{
+                    width:33%;
+                    height:100%;
+                    a{
+                        text-decoration: none;
+                        letter-spacing: 0;
+                        h6{
+                            color: #287df0;
+                            font-weight: 700;
+                            font-size: 20px;;
+                        }
+                        p{
+                            margin-top: -6px;
+                            color: #414141;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .a{
+                    width:200px;
+                }
+            }
+        }
+    }
+}

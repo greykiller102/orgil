@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    background-image: url(./cat.jpg);
+    display:grid;
+    grid-template-rows: 30% 70%;
+}
+@media(min-width:100px) {
+    .main{
+        background-size:cover;
+        background-position: center;
+    }
+}
+.main .menu{
+    width:100%;
+    height:100vh;
+}
+.main .menu .p{
+    color:black;
+    font-weight: 400;
+    letter-spacing: .5em;
+    font-size: 65%;
+    float: left;
+}
+.main .tsagaan{
+    width:100%;
+    height:60px;
+    background-color: white;
+    display:none;
+}
+.main .tsagaan img{
+    width:50px;
+    height:50px;
+    display:inline-block;
+}
+.main .tsagaan p{
+    letter-spacing: 3px;
+    padding-left: 10px;;
+    
+}
+
+.menu ul li{
+    display: inline-block;
+    letter-spacing: .1em;
+    margin-top:50px;
+}
+.main .menu ul li:hover a{
+    color:#c7d93b;
+}
+.main .menu ul li .cat p:hover{
+    color: #c7d93b;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    height:200px;
+    
+}
+.menu ul li a{
+    color:white;
+    display:flex;
+    padding: 0 2em .75em 2em;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.main .b{
+    width:100%;
+    height:200px;
+    background-color: white;
+    display:none !important;
+}
+.main .b img{
+    width:100px;
+    height:100px;
+}
+.cat{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:27px;
+    align-items: center;
+    margin-top:-50px;
+    padding:50px;
+    margin-left:0;
+}
+.cat p{
+    color:white;
+    font-size: 10px;
+    font-family: "Playfair Display SC",serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.cat img{
+    width: 100px;
+    height: 60px;
+}
+.collect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:-200px;
+    width:100%;
+    height:500px;
+}
+.collect h1{
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 1.85625%;
+    color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: 1px solid #fff;
+    font-size: 4.5em;
+    font-family: 'Dancing Script', cursive;
+    line-height: 1;
+    letter-spacing: 15px;
+    font-style: italic;
+    text-align: center;
+}
+.collect p{
+    font-size: 4rem;
+    margin-bottom: .4125rem;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+}
+.collect .coming:hover p{
+    color:#c7d93b;
+}
+@media (min-width:100px) and (max-width:730px) {
+    .main .tsagaan{
+        display:flex !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main .menu{
+        display: none;
+    }
+    .collect h1{
+        font-size: 20px;
+    }
+    .collect p{
+        font-size: 20px;
+    }
+    .collect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:-200px;
+        width:100%;
+        height:500px;
+    }
+    .oroolt{
+        flex-wrap: wrap;
+    }
+    .oroolt .o img{
+        position: relative;
+        width:550px;
+        height:550px;
+    }
+    .garch{
+        text-align: center;
+    }
+    .big2{
+        width:100%;
+        height:1700px !important;
+    }
+    .garch2{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .big3 .logo{
+        padding:0;
+    }
+    .tsagaan1{
+        display:none;
+    }
+    #check-a{
+        display: none;
+    }
+    #check-a:checked ~ .tsagaan1{
+        display:flex !important;
+        width:100%;
+        justify-content: center;
+        font-size: 14px;
+        background-color: #fff;
+        height:300px;
+        color:black;
+    }
+}
+.tsagaan1{
+    display:none;
+}
+#check-a:checked ~ .tsagaan1{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #fff;
+    height:300px;
+    color:black;
+}
+#check-a{
+    display: none;
+}
+.garch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.garch .jijig p{
+    display: block;
+    font-weight: 100px;
+    letter-spacing: .5em;
+    font-size: 12px;
+    font-family: 'Alice',serif;
+    padding-top:80px;
+    padding-bottom:20px ;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.garch .tom h1{
+    display: inline-block;
+    border-bottom: 1px solid #49423b;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    line-height: 1;
+    font-style: italic;
+    letter-spacing: 15px;
+}
+.garch .door p{
+    font-size: 1.16667rem;
+    font-family:serif;
+    letter-spacing: 2px;
+    padding-top:30px;
+}
+.oroolt{
+    display:flex;
+    margin:auto;
+    justify-content: center;
+}
+.oroolt .o{
+    display:flex;
+    justify-content:center;
+    padding:0;
+    margin:0;
+}
+.oroolt .o img{
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.oroolt .o .nemelt{
+    display: none;
+}
+.oroolt .o:hover .nemelt{
+    position: absolute;
+    background-color:rgba(0,0,0,0.30);
+    width:300px;
+    height:300px;
+    border-radius: 100%;
+    text-align: center;
+    display: block;
+    color:white;
+    transition-delay: 0.15s;
+}
+.nemelt a{
+    margin:0;
+    padding:0;
+    font-family: 'Dancing Script', cursive;
+    font-size:30px;
+    margin-top:20px;
+    text-decoration: none;
+    color: #fff;
+}
+.nemelt a:hover{
+    color:#c7d93b;
+}
+.nemelt h3{
+    font-size: 40px;
+    text-align: center;
+    padding:70px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    line-height: 1;
+    padding-bottom:10px;
+}
+.big1 .zurag{
+    background-image: url(./img_homepage_divider.jpg);
+    width:100%;
+    height:500px;
+    background-size: cover;
+}
+.big2{
+    width:100%;
+    height:800px;
+    background-color: #f4efde;;
+}
+.big2 .door{
+    text-align: center;
+}
+.garch2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width:100%;
+    height:500px;
+}
+.garch2 .heseg{
+    width:350px;
+    height:400px;
+}
+.garch2 .heseg h1{
+    padding-top: 7.425%;
+    padding-bottom: 0;
+    font-family: "Playfair Display SC",serif;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: .825rem;
+}
+.garch2 .heseg hr{
+    width: 50%;
+    height: 1px;
+    margin: 0 auto;
+    border-top: 1px solid #49423b;
+}
+.garch2 .heseg p{
+    padding: 2.01406%;
+    padding-top: 3.7125%;
+    padding-bottom: 0;
+    font-family:serif;
+    margin-top: 0;
+    margin-bottom: 1.85625%;
+}
+.big1 .zurag2{
+    background-image: url(./img_homepage_footer.jpg);
+    width:100%;
+    height:500px;
+    background-size: cover;
+}
+.big3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    clear: both;
+    text-align: center;
+    background-color: #dba539;
+    color: #fff;
+    width:100%;
+    height:300px;
+    padding-bottom: 20px;
+}
+.big3 .logo{
+    padding-bottom: 50px;
+}
+.big3 .logo img{
+    width: 100px;
+    height:70px;
+}
+.big3 .duus a i{
+    text-decoration: none;
+    margin:auto;
+    color:white;
+}
+.big3 .duus a i:hover{
+    color:#f15a22;
+}
+.big3 .duus a{
+    padding:20px;
+}
+.big3 h1{
+    padding-top:90px;
+}
+.big4{
+    width:100%;
+    height:50px;
+    padding: 1em 0;
+    display: block;
+    background-color: #805f1e;
+}
+.big4 .duus2 p{
+    text-align: center;
+    font-family: "Playfair Display SC",serif;
+    font-style: normal;
+    color: #fff;
+}

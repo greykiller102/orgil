@@ -1,0 +1,958 @@
+.navbar {
+  background-color: white;
+  border-bottom: solid 1px #cfd4d8;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 60px;
+}
+
+.navbar__logo {
+  float: left;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 200px;
+  width: 350px;
+  height: auto;
+}
+
+.navbar__menu {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.navbar__menu ul a {
+  color: #5F717D;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.navbar__menu ul a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #ff6600;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.navbar__menu ul a:hover::before {
+  width: 100%;
+}
+
+.navbar__menu ul a:hover {
+  color: black;
+}
+
+.navbar__menu ul li {
+  display: inline-block;
+  margin-left: 15px;
+  padding-top: 17px;
+  position: relative;
+}
+
+.navbar .nuuts #check {
+  display: none;
+}
+
+.navbar .nuuts i {
+  display: none;
+}
+
+.navbar .nuuts .tsagaan {
+  display: none;
+}
+
+.navbar .nuuts #check:checked ~ .tsagaan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -27px;
+  background-color: white;
+}
+
+.navbar .nuuts #check:checked ~ .tsagaan ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 80vh;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .nuuts #check:checked ~ .tsagaan ul li {
+  margin-left: 15px;
+  padding-top: 17px;
+  position: relative;
+}
+
+.navbar .nuuts #check:checked ~ .tsagaan ul li a {
+  color: #5F717D;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.app {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  border-bottom: solid 1px #cfd4d8;
+}
+
+.app .igo {
+  background: black;
+  border-color: dimgrey;
+  border-radius: 100px !important;
+  width: 250px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.app .igo a {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: white;
+  border-width: 2px;
+}
+
+.app .igo:hover {
+  background-color: dimgray;
+}
+
+.app img {
+  height: 20px;
+  width: auto;
+  margin-top: -5px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.delger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-bottom: solid 1px #cfd4d8;
+}
+
+.delger .garch {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #293C43;
+}
+
+.delger .ulbak {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  height: 8px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.delger .heseguud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+
+.delger .heseguud .heseg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+}
+
+.delger .heseguud .heseg img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.delger .heseguud .heseg h1 {
+  font-size: 44px;
+  line-height: 56px;
+  color: #293C43 !important;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.delger .heseguud .heseg h4 {
+  font-size: 19px;
+  line-height: 24px;
+  color: #293C43 !important;
+}
+
+.delger .heseguud .heseg p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5F717D;
+}
+
+.delger2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.delger2 .garch {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #293C43;
+}
+
+.delger2 .ulbak {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  height: 8px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.delger2 .more p {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+  color: #293C43;
+  z-index: 1;
+}
+
+.delger2 .zurag {
+  background-image: url(./10.jpg) !important;
+  width: 70%;
+  height: 320px;
+  background-size: cover !important;
+  border-radius: 10px;
+  background: no-repeat;
+  margin: auto;
+  margin-bottom: 20px;
+  background-position: center;
+}
+
+.delger2 .heseguud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.delger2 .heseguud .heseg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 350px !important;
+  height: 300px;
+}
+
+.delger2 .heseguud .heseg img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.delger2 .heseguud .heseg h4 {
+  font-size: 19px;
+  line-height: 24px;
+  color: #293C43 !important;
+  margin-top: 5px;
+}
+
+.delger2 .heseguud .heseg p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5F717D;
+  margin-top: 5px;
+}
+
+.delger2 .del {
+  width: 350px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.delger2 .del a {
+  background: transparent;
+  border: #ff6600 1px solid;
+  border-radius: 50px;
+  width: 100%;
+  color: #ff6600;
+  border-width: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.delger2 .del a:hover {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  border-color: #ff6600;
+  border-radius: 50px;
+  width: 100%;
+  color: white;
+  border-width: 2px;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.delger3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  border-bottom: solid 1px #cfd4d8;
+}
+
+.delger3 .garch {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #293C43;
+}
+
+.delger3 .ulbak {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  height: 8px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.delger3 .more p {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+  color: #293C43;
+  z-index: 1;
+}
+
+.delger3 .cards {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.delger3 .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 358px;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+
+.delger3 .cards .card img {
+  width: 358px;
+  height: 200px;
+}
+
+.delger3 .cards .card .unshih {
+  padding: 20px;
+}
+
+.delger3 .cards .card .unshih .blog {
+  width: 302px;
+  height: 40px;
+  display: -webkit-box;
+  max-width: 400px;
+  height: 40px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+}
+
+.delger3 .cards .card .unshih h1 {
+  font-size: 18px !important;
+  line-height: 20px !important;
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
+  color: #293C43 !important;
+}
+
+.delger3 .cards .card .unshih p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.delger3 .cards .card .unshih a {
+  background-color: transparent;
+  color: #ff6600;
+  font-weight: 600;
+  text-align: left;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.delger3 .cards .card .unshih a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.6;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s;
+}
+
+.delger3 .del {
+  width: 350px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.delger3 .del a {
+  background: transparent;
+  border: #ff6600 1px solid;
+  border-radius: 50px;
+  width: 100%;
+  color: #ff6600;
+  border-width: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.delger3 .del a:hover {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  border-color: #ff6600;
+  border-radius: 50px;
+  width: 100%;
+  color: white;
+  border-width: 2px;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.delger4 {
+  width: 100%;
+  height: 315px;
+  background-image: url(./ipoheader.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delger4 .garch {
+  text-align: center !important;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.delger4 .ulbak {
+  background-color: #ff6600;
+  background-image: linear-gradient(302deg, #ff6600 46%, #f93702 100%);
+  height: 8px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.delger4 .more p {
+  text-align: center !important;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+  color: #fff;
+  z-index: 1;
+}
+
+.delger4 .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.delger4 .logos img {
+  height: 90px;
+  width: auto;
+}
+
+.duus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 410px;
+  background-color: #f2f2f2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.duus .baganuud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.duus .baganuud .bagana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 70px;
+}
+
+.duus .baganuud .bagana ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.duus .baganuud .bagana ul h1 {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin-bottom: 10px !important;
+  font-weight: 600 !important;
+  color: #293C43 !important;
+}
+
+.duus .baganuud .bagana ul li {
+  color: #5F717D;
+  font-size: 14px;
+}
+
+.duus .baganuud .bagana ul li:hover {
+  color: black;
+}
+
+.duus .logonuud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.duus .logonuud i {
+  font-size: 20px;
+  color: #293C43;
+}
+
+.duus .logonuud i:hover {
+  color: #ff6600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.pointer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #293C43;
+  color: white !important;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding-top: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 50px;
+  font-size: 25px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.slider .gallery-cell {
+  width: 100%;
+  height: 600px;
+  background-image: url(./banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tetgegch {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tetgegch .tet {
+  width: 200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tetgegch .tet img {
+  height: 70px;
+  width: auto;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 40px;
+}
+
+.copy p {
+  color: #5F717D;
+  font-size: 15px;
+}
+
+@media (max-width: 1060px) {
+  .navbar .navbar__menu ul {
+    display: none;
+  }
+  .navbar .nuuts i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 28px;
+    color: black;
+    position: relative;
+    top: -40px;
+    right: 20px;
+  }
+  .navbar .nuuts .tsagaan {
+    display: none;
+  }
+  .delger .heseguud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .delger2 .heseguud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .delger4 .logos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .duus .baganuud .bagana {
+    display: none;
+  }
+  .duus .baganuud .a {
+    display: block;
+  }
+  .slider .gallery-cell {
+    width: 100%;
+    height: 300px;
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .tetgegch {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=lend.css.map */

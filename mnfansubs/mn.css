@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color:#050505f1;
+    font-family: 'Roboto',sans-serif;
+    padding:0;
+}
+.menu{
+    height:70px;
+    width:100%;
+    background-color:#050505f1;
+    border-bottom: 1px solid white;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+}
+.menu .logo img{
+    height:58px;
+    width:220px;
+    padding:15px;
+}
+.menu .items ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+.menu .items ul .check{
+    padding-left:70px;
+}
+.menu .items ul li{
+    color:white;
+}
+.menu .items ul li label i{
+    font-size: 20px;
+}
+.menu .items ul li:hover{
+    color: #3599f1;
+}
+.hid {
+    display: none;
+    float:right;
+    position: relative;
+    z-index: 999;
+    top:20px;
+    border-top: rgb(0, 183, 255) 4px solid;
+    width:300px;
+}
+.hid ul li{
+    color:white;
+    border-bottom: darkgray 3px dotted;
+    width:300px;
+    height:50px;
+    background-color: #666;
+    padding:15px;
+}
+.hid ul{
+    display:flex !important;
+    flex-direction: column !important;
+    margin:0;
+    padding-inline-start: 0%;
+}
+.hid3{
+    width:300px;
+    height:90px;
+    background-color:#007aff;
+    padding:0;
+    border-top: 0;
+}
+.hid3 .hehe{
+    width:260px;
+    height:50px;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 0;
+    font-size: 18px;
+}
+#check-a:checked ~ .hid3,
+#check-b:checked ~ .hid2,
+#check-c:checked ~ .hid1 {
+    display:block;
+    margin:0;
+    padding:0;
+}
+#check-a,
+#check-b,
+#check-c{
+    display:none;
+}
+
+.all{
+    width:100%;
+    justify-content: center;
+    margin:auto;
+}
+.all .heseg1{
+    display:grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    width:100%;
+    justify-content: center;
+    gap:10px;
+    padding:0;
+    margin:auto;
+    padding-top:20px;
+    position:relative;
+   
+}
+@media (max-width:930px){
+    .all .heseg1{
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        width:100%;
+        justify-content: center;
+        gap:10px;
+        padding:0;
+        margin:auto;
+        padding-top:20px;
+        position:relative;
+       
+    }
+    .duus {
+        width:100%;
+        height:58px;
+        border-top:white 1px solid;
+        display:flex;
+        justify-content:center;
+        flex-direction: row;
+    }
+}
+@media (max-width:500px){
+    .all .heseg1{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        width:100%;
+        justify-content: center;
+        gap:10px;
+        padding:0;
+        margin:auto;
+        padding-top:20px;
+        position:relative;
+       
+    }
+    
+}
+.all .heseg1 .item img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+} 
+.all .heseg1 .item {
+    position: relative;
+}
+.all .heseg1 .item .black{
+    position: absolute;
+    background-color: rgba(0,0,0,0.30);
+    width:100%;
+    height:100%;
+    bottom:0;
+}
+.black p{
+    font-family: 'Roboto',sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    padding-top: 170px;
+    padding-left:10px;
+}
+.black:hover p a{
+    color:#3599f1;
+}
+.black p a{
+    text-decoration: none;
+    color:white;
+}
+.heseg2{
+    width:60%;
+    height:40px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin:Auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.all .heseg2 .tsaash p a{
+    text-decoration: none;
+    color:rgb(122, 120, 120);
+    
+}
+.heseg2:hover{
+    background-color:#3599f1;
+}
+.heseg2:hover .tsaash p a{
+    color: white;
+}
+.heseg3{
+    display:flex;
+    justify-content: center;
+}
+.heseg3 img{
+    width:900px;
+    height:200px;
+}
+.toim p{
+    color: #999;
+    font-size: 18px;
+    line-height: 40px;
+}
+.images{
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 300px;
+    width:100%;
+    justify-content: center;
+    gap:10px;
+    padding:0;
+    margin:auto;
+    padding-top:20px;
+    position:relative;
+}
+.toim .images img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+
+}
+.toim {
+    position: relative;
+}
+
+.toim .items:hover .black{
+    background-color: rgba(0,0,0,0.30);
+    width:200px;
+    height:300px;
+    bottom:0;
+    color:#3599f1;
+    display:block;
+    position: absolute;
+}
+.toim .items .black{
+    display:none;
+}
+.toim .items .black p{
+    padding-top:260px;
+    line-height: 15px;
+    font-size: 14px;
+}
+.duus{
+    width:100%;
+    height:58px;
+    border-top:white 1px solid;
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.duus i{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    padding:20px;
+    border: white 1px solid;
+    
+}
+.duus i:hover{
+    color:#3599f1;
+}
+.duus .nemelt{
+    display: none;
+}
+.duus2{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:40px;
+    border-top: white 1px solid;
+}
+.duus2 p{
+    color: white;
+}

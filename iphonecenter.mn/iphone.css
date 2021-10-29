@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    padding-right:0;
+}
+.body{
+    font-family: Tahoma,sans-serif,"ms sans serif",sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color:white;
+}
+p{
+    font-weight:bold;
+}
+.main{
+    background-color: #242424;
+    padding-left:380px;
+    padding-right:30px;
+}
+.logo{
+    display:inline-flex;
+}
+.logo img{
+    width:80px;
+    height:62px;
+    display:inline-flex;
+    padding-top:12px;
+    padding-bottom: 0px;
+}
+.menu{
+    height:50px;
+    width:80%;
+    padding-left: 100px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin-top:-38px;
+}
+ul{
+    padding-top:0;
+    margin-top:0;
+}
+.menu li{
+    display:inline-flex;
+    padding-left: 30px;
+}
+.menu li a{
+    color:white;
+    font-family:Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    height:70px;
+    display: block;
+    
+}
+.active a{
+    color:#969696 !important;
+    border-top: 3px solid #969696;
+}
+.menu ul li:hover a{
+    color:#969696;
+    border-top: 3px solid #969696;
+}
+.menu ul li:hover i{
+    color:#969696;
+}
+.biy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top:60px;
+}
+.back{
+    background-image: url(./iphone-11Pro-2500x700.png);
+    width:100%;
+    height:772px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heseg1{
+    padding-bottom: 370px;
+    text-align: center;
+    padding-top:100px;
+}
+.heseg1 h1{
+    color:white;
+    font-family: Tahoma,sans-serif,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
+.heseg1 p{
+    font-family: Tahoma,sans-serif,"ms sans serif",sans-serif;
+    color:white;
+    font-size: 16px;
+    margin:0;
+    font-weight: 400;
+   
+}
+.heseg1 .a{
+    color:#969696 !important;
+    margin-bottom:20px;
+}
+.heseg1 a{
+    color: #03a9f4;
+    font: 13px/20px Arial,Helvetica,sans-serif;
+    font-size: 20px;
+}
+.heseg1 a:hover{
+    color:#fff;
+}
+.back2{
+    background-image: url(./iphone-11-2500x700-black-1.png);
+    width:100%;
+    height:772px;
+    background-repeat: no-repeat;
+    margin-top:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-size: cover;
+}
+.back2 .heseg1 h1{
+    color:black;
+    font-family: Tahoma,sans-serif,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
+.back2 .heseg1 p{
+    font-family: Tahoma,sans-serif,"ms sans serif",sans-serif;
+    color:black;
+    font-size: 16px;
+    margin:0;
+    font-weight: 400;
+}
+.back3{
+    width:100%;
+    height:550px;
+    margin-top:60px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-size: cover;
+}
+.back3 .heseg1{
+    padding:0;
+    display:flex;
+    width:1200px;
+    height:500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.back3 .heseg1 h1{
+    color:black;
+    font-family: Tahoma,sans-serif,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: .7em;
+}
+.main .back3 .heseg1 a:hover{
+    color:blue;
+}
+.back3 .heseg1 p{
+    font-family: Tahoma,sans-serif,"ms sans serif",sans-serif;
+    color:black;
+    font-size: 16px;
+    margin:0;
+    font-weight: 400;
+}
+.back3 img{
+    width: 1400px;
+    height:500px;
+    position: absolute;
+    padding-left:1000px;
+}
+.under{
+    background-color:#e5e5e5;
+    width: 100%;
+    height:940px;
+}
+.back4{
+    position: relative;
+    color:#494949;
+    width:100%;
+    margin:auto;
+    height:50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+.back4 p{
+    color:#2b2e32;
+    font-size: 16px;
+    font-family: Tahoma,sans-serif,"ms sans serif",sans-serif;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0;
+}
+.back4 .zuraas{
+    position: relative;
+    height: 6px;
+    border-bottom: 1px solid #e0dede;
+    width:400px;
+    margin:10px;
+}
+.back5 {
+    width:100%;
+    height:980px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+.tsag{
+    padding-top:100px;
+}
+.back5 .tsag{
+    width:600px;
+    height:750px;
+    background-color: #fff;
+    margin:10px;
+}
+.tsag h1{
+    font-family: lucida,sans-serif,Tahoma,sans-serif;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: 0;
+}
+.tsag p{
+    color: #bac5d0;
+}
+.tsag a{
+    color:#4c8be0;
+    line-height: 100px;
+    font-size: 20px;
+}
+.tsag a:hover{
+    color:#03a9f4;
+}
+.tsag img{
+    width:550px;
+    height: 550px;
+    margin-top:-20px;
+}
+.under2{
+    width:100%;
+    height:500px;
+    position: relative;
+}
+.under2 p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.under2 .back4{
+    margin-top:20px;
+}
+.under2 .back6{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:400px;
+    margin-top:0;
+}
+.under2 .zurag img{
+    width:300px;
+    height:200px;
+    display:block;
+}
+.under2 .zurag a{
+    font-size: 18px;
+    margin-top:10px;
+}
+.under2 .zurag a:hover{
+    color:#03a9f4;
+}
+.under3{
+    width:100%;
+    height:600px;
+    display: block;
+}
+.under3 .back7{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #303337;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    width: 100%;
+    height:140px;
+}
+.under3 h1{
+    color:#fff;
+    padding-right:100px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+.back8{
+    background-color: #2b2e32;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    height:600px;
+    padding-top:100px;
+    padding-left:0px;
+    position: relative;
+}
+.back8 .medeelel{
+    width:300px;
+    height:500px;
+}
+.back8 .medeelel .logo img{
+    width:100px;
+    height:100px;
+    position: relative;
+}
+.back8 .hayg{
+    line-height: 20px;
+    color:#eaeaea;
+    padding-right:50px;
+}
+.back8 .jagsaal{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:20px;
+}
+.back8 h1{
+    display:flex;
+
+}
+.back8 .jagsaal ul{
+    color:#fff;
+    list-style:square;
+    line-height: 40px;
+    width:300px;
+    height:100%;
+}
+.back8 .jagsaal ul li{
+    border-bottom:1px solid #eaeaea;
+}
+.back8 .tses .b ul{
+    padding-bottom:100px;
+}
+.back8 .tses .jagsaal ul li:hover{
+    color: #03a9f4;
+}
+.under3 .photos{
+    width:300px;
+    height:400px;
+}
+.under3 .photos img{
+    width:200px;
+    height:200px;
+    display: flex;
+    
+}
+.under4 .copy p{
+    width:100%;
+    height:100px;
+    background-color: black;
+    color:white;
+    padding:0;
+    margin:0;
+    position: relative;
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

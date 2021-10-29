@@ -1,0 +1,464 @@
+.menu {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu .undsen {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu .undsen .haih {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.menu .undsen .haih .logo img {
+  width: 119px;
+  height: 39px;
+}
+
+.menu .undsen .haih .menubar #check {
+  display: none;
+}
+
+.menu .undsen .haih .menubar i {
+  font-size: 22px;
+  padding: 7.5px 9px;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.menu .undsen .haih .s {
+  width: 556px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.menu .undsen .haih .s .hehe {
+  width: 500px;
+  height: 40px;
+}
+
+.menu .undsen .haih .s .searchicon i {
+  background-color: #1e87f0;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 11px 12px;
+}
+
+.menu .undsen .hansh {
+  width: 244px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .undsen .hansh ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu .undsen .hansh ul li {
+  width: 33%;
+  height: 100%;
+}
+
+.menu .undsen .hansh ul li a {
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.menu .undsen .hansh ul li a h6 {
+  color: #287df0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu .undsen .hansh ul li a p {
+  margin-top: -6px;
+  color: #414141;
+  font-size: 13px;
+}
+
+.menu .undsen .hansh ul .a {
+  width: 200px;
+}
+
+.under_menu {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.under_menu .undsen2 {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.under_menu .undsen2 .eh {
+  width: 75%;
+}
+
+.under_menu .undsen2 .eh ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.under_menu .undsen2 .eh ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: PT Sans,sans-serif;
+  font-size: 13px;
+  color: black;
+  width: 100px;
+}
+
+.under_menu .undsen2 .eh ul li a i {
+  background-color: #287df0;
+  color: #fff;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.under_menu .undsen2 .nemelt {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.under_menu .undsen2 .nemelt i {
+  border-right: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  padding: 0 15px;
+  line-height: 40px !important;
+  font-size: 30px;
+  color: #287df0;
+}
+
+.eh {
+  width: 100%;
+  height: auto;
+}
+
+.eh .undsen {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.eh .undsen .delger {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (24.625%)[4];
+      grid-template-columns: repeat(4, 24.625%);
+  -ms-grid-rows: (250px)[2];
+      grid-template-rows: repeat(2, 250px);
+  gap: 0.5%;
+}
+
+.eh .undsen .delger .items {
+  background-color: black;
+  position: relative;
+}
+
+.eh .undsen .delger .items img {
+  width: 100%;
+  height: 100%;
+}
+
+.eh .undsen .delger .items .dawhar {
+  position: absolute;
+  top: 60%;
+  padding-left: 10px;
+}
+
+.eh .undsen .delger .items .dawhar a {
+  text-decoration: none;
+}
+
+.eh .undsen .delger .items .dawhar a h6 {
+  color: #fff;
+  background-color: #0099ff;
+  padding: 5px 7px;
+  width: 40%;
+}
+
+.eh .undsen .delger .items .dawhar h1 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.eh .undsen .delger .items .dawhar p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.eh .undsen .delger .a {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.eh .undsen .delger2 h1 {
+  color: #fff;
+  background-color: #0099ff;
+  padding: 5px 7px;
+  width: 30%;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.eh .undsen .buhel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.eh .undsen .buhel .delger3 {
+  width: 70%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.eh .undsen .buhel .delger3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.eh .undsen .buhel .delger3 ul li {
+  list-style: none;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee img {
+  width: 181px;
+  height: 140px;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee .medeenud {
+  padding-left: 20px;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee .medeenud a {
+  color: gray;
+  font-size: 15px;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee .medeenud h1 {
+  font-size: 20px;
+}
+
+.eh .undsen .buhel .delger3 ul li .medee .medeenud p {
+  color: rgba(155, 153, 153, 0.829);
+}
+
+.eh .undsen .buhel .delger3 ul li .medee .medeenud h6 {
+  color: gray;
+  font-size: 15px;
+}
+
+.eh .undsen .buhel .delger4 {
+  width: 30%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.eh .undsen .busad {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eh .undsen .busad h1 {
+  background-color: #0099ff;
+  color: #fff;
+  font-size: 20px;
+}
+
+.eh .undsen .delger5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #1f1f1f;
+}
+
+.eh .undsen .delger5 .black1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.eh .undsen .delger5 .black1 img {
+  width: 200px;
+  height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto !important;
+}
+/*# sourceMappingURL=gogo.css.map */
